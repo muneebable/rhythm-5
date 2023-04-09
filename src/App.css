@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  position: relative;
+}
+
+.container {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation a {
+  display: inline-block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: #666;
+  background-color: #f0f0f0;
+}
+
+.mood-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.mood-icon {
+  font-size: 64px;
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.mood-icon:hover {
+  transform: scale(1.1);
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-bar {
+  position: relative;
+  width: 400px;
+  margin-right: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-bar input:focus {
+  border-bottom: 2px solid #333;
+}
+
+.search-bar .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #666;
+  cursor: pointer;
+}
+
+.song-list {
+  margin-top: 20px;
+}
+
+.song {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.song:hover {
+  background-color: #0a4687;
+}
+
+.song-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.song-artist {
+  font-size: 16px;
+  color: #666;
+}
+
+.song-preview {
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+}
+
+.song-preview:hover {
+  text-decoration: underline;
+}
